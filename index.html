@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="მოგზაურობა, ტურისტული კომპანია, სამოგზაურო ტურები, ლაშქრობა, ყველაზე მოთხოვნადი ტურისტული ადგილები, სამოგზაურო ტურის დაგეგმვა,
+    travel, Travel company, travel planning, Top tourist spots, Top travel company, hike">
+    <meta name="description" content="Travel company">
+    <meta name="author" content="zura doganadze">
+    <meta http-equiv="refresh" content="60">
+    <meta property="og:url" content="zura-doganadze.github.io/portfolio/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Travel company" />
+    <meta property="og:description" content="Our travel company will help you plan your dream tour. It will make your trip easier and avoid possible troubles." />
+    <meta property="og:image:" content="assets/img"/>
+    <meta name="title" property="og:title" content="Zura's Portfolio Site">
+    <meta name="tipe" property="og:type" content="website">
+    <meta name="image" property="og:image" src="assets/img/logo/Tourism.png">
+    <meta name="url" property="og:url" content="zura-doganadze.github.io/portfolio/">
+    <meta name="description" property="og:description" content="Our travel company will help you plan your dream tour. It will make your trip easier and avoid possible troubles.">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tourist-Landing-Page</title>
-
 </head>
-<body>
+<body class="body">
     <header>
         <div class="header-wrapper conteiner">
             <a href="#">
@@ -21,7 +36,7 @@
                         <a href="assets/pages/api.html">api</a>
                     </li>
                     <li>
-                        <a href="#">home</a>
+                        <a href="index.html">home</a>
                     </li>
                     <li>
                         <a href="#">about us</a>
@@ -42,6 +57,11 @@
         </div>
     </header>
     <main>
+        <a href="#" class="to-top">
+            <svg class="fas fa-chevron" width="18" height="19" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.735321 1.11766L5.50003 5.88237L10.2647 1.11766" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
         <section>
             <div class="slideshow-wrapper">
                 <button class="slider__btn slider__btn--left">
@@ -54,7 +74,7 @@
                 </button>   
                 <div class="slider">
                     <div class="slide">
-                        <div class="slide-img">
+                        <div class="slide-img-contiener">
                             <img src="assets/img/slider-images-of-tours/greece-images.jpg" alt="greece img">               
                         </div>
                         <div class="travel-price-conteiner">
@@ -62,12 +82,12 @@
                             <span>from $199/person</span>
                         </div>
                         <div class="slide-text-conteiner">
-                            <h1>discover greece</h1>
+                            <h2>discover greece</h2>
                             <span>travel with unique experience</span>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="slide-img">
+                        <div class="slide-img-contiener">
                             <img src="assets/img/slider-images-of-tours/Dubai_cover_1.jpg" alt="dubai img">               
                         </div>
                         <div class="travel-price-conteiner">
@@ -75,12 +95,12 @@
                             <span>from $389/person</span>
                         </div>
                         <div class="slide-text-conteiner">
-                            <h1>discover dubai</h1>
+                            <h2>discover dubai</h2>
                             <span>travel with unique experience</span>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="slide-img">
+                        <div class="slide-img-contiener">
                             <img src="assets/img/slider-images-of-tours/singapor.jpg" alt="singapore img">               
                         </div>
                         <div class="travel-price-conteiner">
@@ -88,12 +108,12 @@
                             <span>from $299/person</span>
                         </div>
                         <div class="slide-text-conteiner">
-                            <h1>discover singapore</h1>
+                            <h2>discover singapore</h2>
                             <span>travel with unique experience</span>
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="slide-img">
+                        <div class="slide-img-contiener">
                             <img src="assets/img/slider-images-of-tours/tailand.jpg" alt="thailand img">               
                         </div>
                         <div class="travel-price-conteiner">
@@ -101,7 +121,7 @@
                             <span>from $549/person</span>
                         </div>
                         <div class="slide-text-conteiner">
-                            <h1>discover thailand</h1>
+                            <h2>discover thailand</h2>
                             <span>travel with unique experience</span>
                         </div>
                     </div>
@@ -113,30 +133,31 @@
             <div class="conteiner">
                 <div class="services-section-wrapper">
                     <div class="services-description">
-                        <h6 class="title-h6">discover</h6>
-                        <h2 class="title-h2">our hot services</h2>
+                        <span class="section-titles-span">discover</span>
+                        <h2 class="section-main-title">our hot services</h2>
                         <img src="assets/img/services img/Shape 1.png" alt="shape img">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
                     </div>
-                    <div class="services-conteiner">                     
-                    </div>    
+                    <div class="services-conteiner"> 
+
+                    </div> 
+                    <div class="modal hidden">
+                        <div class="modal-conteiner ">
+                            <button class="close-modal">&times;</button>
+                            <img class="card-modal-img" alt="services img">
+                            <h3 class="card-modal-title"></h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                        </div>
+                    </div>   
+                    <div class="overlay hidden"></div>    
                 </div>
-            </div>
-            <div class="conteiner">
-                <div class="modal-conteiner ">
-                    <img class="card-modal-img" src="assets/img/services img/img3.png" alt="">
-                    <h2 class="title-h2 card-modal-title">our hot services</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-    
-                </div>
-            </div>
-            
+            </div>           
         </section>
         <section>
             <div class="videotour-section-wrapper">
                 <img  class="asdasdf" src="assets/img/video tour img/xavier-coiffic-10689.png" alt="tour background img">
                 <div class="video-description">
-                    <h6>discover</h6>
+                    <span>discover</span>
                     <h2>watch our video tour</h2>
                     <img src="assets/img/video tour img/Shape 1.png" alt="shape img">
                 </div>
@@ -172,8 +193,8 @@
         <section>
             <div class="conteiner">
                 <div class="popular-tour-titles">
-                    <h6 class="title-h6">we offer</h6>
-                    <h2 class="title-h2">popular tour package</h2>
+                    <span class="section-titles-span">we offer</span>
+                    <h2 class="section-main-title">popular tour package</h2>
                     <img src="assets/img/popular tour img/Shape 1.png" alt="Shape img">
                 </div>
                 <div class="popular-tour-wrapper">
@@ -199,7 +220,7 @@
                             <span>3 Days / 4 Night</span>
                         </div>
                     </div>
-                    <div class="popular-tour-conteiner mesame">
+                    <div class="popular-tour-conteiner">
                         <div class="popular-tour-img-conteiner">
                             <img src="assets/img/popular tour img/Rectangle 8 copy 5.png" alt="greece img">
                             <span>honeymoon</span>
@@ -217,7 +238,7 @@
                 <div class="message-box-conteiner">
                     <h3>Get 10% Off on Your Next Travel</h3>
                     <span>Maximum doscout 1000$ per person</span>
-                    <div class="form-conteiner"> 
+                    <div class="package-form-conteiner"> 
                         <form action="#">
                             <input type="email"  placeholder="Enter your email" spellcheck="false" id="email-field" onkeyup="validateEmail()">
                         </form>
@@ -229,8 +250,8 @@
         <section>
             <div class="conteiner">
                 <div class="feedback-section-titles">
-                    <h6 class="title-h6">our smiles</h6>
-                    <h2 class="title-h2">happy travelers</h2>
+                    <span class="section-titles-span">our smiles</span>
+                    <h2 class="section-main-title">happy travelers</h2>
                     <img src="assets/img/feedback img/Shape 1.png" alt="Shape img">
                 </div>
                 <div class="feedback-section-conteiner">
@@ -267,8 +288,8 @@
         <section>
             <div class="popular-countries-section">
                 <div class="popular-countries-titles">
-                    <h6 class="title-h6">destination</h6>
-                    <h2 class="title-h2">popular tourism countries</h2>
+                    <span class="section-titles-span">destination</span>
+                    <h2 class="section-main-title">popular tourism countries</h2>
                     <img src="assets/img/popular countries img/Shape 1.png" alt="Shape img">
                 </div>
             </div>
@@ -285,8 +306,7 @@
                                 <svg xmlns="http:/ /www.w3.org/2000/svg" width="20" height="13" viewBox="319 4967 20 13"><path d="M319 4972.417h15.778l-4-3.9 1.555-1.517 6.667 6.5-6.667 6.5-1.555-1.517 4-3.9H319v-2.166Z" fill="#fff" fill-rule="evenodd" data-name="Forma 1"/>
                                 </svg>
                             </button>
-                        </div>
-                
+                        </div>              
                     </div>
                 </div>
                 <div class="popular-countres-conteiner">
@@ -348,7 +368,7 @@
             <div class="conteiner">
                 <div class="footer-wrapper">
                     <div class="quick-links-conteiner">
-                        <h5>quick links</h5>
+                        <h5 class="footer-h5">quick links</h5>
                         <div>
                             <nav>
                                 <ul>
@@ -369,7 +389,7 @@
                         </div>
                     </div>
                     <div class="footer-support-conteiner">
-                        <h5>support</h5>
+                        <h5 class="footer-h5">support</h5>
                         <nav>
                             <ul>
                                 <li>
@@ -388,7 +408,7 @@
                         </nav>
                     </div>
                     <div class="footer-address-conteiner">
-                        <h5>address</h5>
+                        <h5 class="footer-h5">address</h5>
                         <nav>
                             <ul>
                                 <li>
@@ -412,11 +432,12 @@
                     <div class="input-conteiner">
                         <div>
                             <span>subscriibe to our newsletter</span>
-                        </div>                        <form action="">
-                           <input type="text" placeholder="your email">
+                        </div>                       
+                        <form action="#">
+                            <input type="email"  placeholder="Enter your email" spellcheck="false" id="email-field" onkeyup="validateEmail()">
                         </form>
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.31" height="48.806" viewBox="1205.747 5619.797 58.31 48.806"><image width="58.31" height="48.806" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA2CAYAAACWeYpTAAAAAXNSR0IArs4c6QAAAORJREFUaEPt1rERwkAQQ1FtATRGBwRQEwmNUADdUMeROPIwEGjNCN93AfKu3p3HpUmemmRPsejepBFF9E8b4Oh2wI0xzpJukg5f8p6SLlX16Hjvu4xNRZdFj1V1+rTAGOMu6cqiDcyINpQoju6qRe5ox7FaMrijHWVyR7mj/BnZN+kXH6P9/+vaDI0Bm4o2zmlHsahdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBUwj+gKVt283qERJdwAAAABJRU5ErkJggg==" data-name="" transform="translate(1205.747 5619.797)"/>
+                        <button >
+                            <svg id="button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.31" height="48.806" viewBox="1205.747 5619.797 58.31 48.806"><image width="58.31" height="48.806" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA2CAYAAACWeYpTAAAAAXNSR0IArs4c6QAAAORJREFUaEPt1rERwkAQQ1FtATRGBwRQEwmNUADdUMeROPIwEGjNCN93AfKu3p3HpUmemmRPsejepBFF9E8b4Oh2wI0xzpJukg5f8p6SLlX16Hjvu4xNRZdFj1V1+rTAGOMu6cqiDcyINpQoju6qRe5ox7FaMrijHWVyR7mj/BnZN+kXH6P9/+vaDI0Bm4o2zmlHsahdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBSAaBmKPg6hdYVgAomEg9jiI2hWGBUwj+gKVt283qERJdwAAAABJRU5ErkJggg==" data-name="" transform="translate(1205.747 5619.797)"/>
                             </svg>
                         </button>                 
                     </div>  
@@ -428,10 +449,8 @@
             <span>all rights reserved</span>
         </div>
     </footer>
-    
     <script src="assets/js/app.js"></script>
     <script src="assets/js/counter.js"></script>
-    <script src="assets/js/form.js"></script>
-    
+    <script src="assets/js/form.js"></script> 
 </body>
 </html>

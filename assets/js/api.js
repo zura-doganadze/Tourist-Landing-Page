@@ -1,4 +1,3 @@
-
 const addressesWrapper = document.querySelector('.addresses-wrapper');
 
 const getAddresses = function(location) {
@@ -26,39 +25,16 @@ const getAddresses = function(location) {
 
 getAddresses();
 
-
-
-// ASDASDASD
-async function fetchPersonData() {
-  try {
-    const response = await fetch('https://fakerapi.it/api/v1/persons?_quantity=1&_gender=male%27');
-    const data = await response.json();
-    console.log(data);
-    return data;
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return null;
-  }
-}
-console.log(fetchPersonData());
-
-
-
-
 const employee = document.querySelector('.employee-details-wrapper');
 
 const getEmployee = function(persons) {
-
-
   const request = new XMLHttpRequest();
   request.open('GET', `https://fakerapi.it/api/v1/persons?_quantity=1&_gender=male&_birthday_start=2005-01-01${persons}`);
   request.send();
 
-
   request.addEventListener('load', function() {
     const data = JSON.parse(this.responseText);
     console.log(data);
-
 
     const html = `
     <div class="employee-details">
